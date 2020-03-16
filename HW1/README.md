@@ -14,6 +14,8 @@ see [參考資料一](https://ttc.scu.org.tw/memdca1.htm)
 1. Write markdown text in this textarea.
 2. Click 'HTML Preview' button.
 
+<img src="/HW1/flow.png" width="400" height="300" border="10" />
+
 ----
 ## markdown quick reference
 # headers
