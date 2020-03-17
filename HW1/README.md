@@ -67,7 +67,6 @@ see [參考資料一](https://ttc.scu.org.tw/memdca1.htm)
   第035期        34293334           628711       1409313131
   第036期        34293310           314355       1443920796
 
-
 ----
 ## usage
 1. Write markdown text in this textarea.
