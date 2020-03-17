@@ -17,7 +17,7 @@ see [參考資料一](https://ttc.scu.org.tw/memdca1.htm)
 <img src="/HW1/flow.png" border="10" />
 
 ## 執行範例
-
+```
 請輸入本金(元): 1234560000
 請輸入期數(年): 3
 請輸入年利率(%): 11
@@ -67,6 +67,7 @@ see [參考資料一](https://ttc.scu.org.tw/memdca1.htm)
   第035期        34293334           628711       1409313131
   第036期        34293310           314355       1443920796
 
+```
 ----
 ## usage
 1. Write markdown text in this textarea.
