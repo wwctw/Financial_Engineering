@@ -1,4 +1,4 @@
-# 本金平均攤還試算
+# 本金平均攤還試算學習歷程
 
 ## 先說程式執行方法
 
@@ -84,30 +84,8 @@ see [參考資料](https://ttc.scu.org.tw/memdca1.htm)
   第036期        34293310           314355       1443920796
 
 ```
-----
-## usage
-1. Write markdown text in this textarea.
-2. Click 'HTML Preview' button.
 
-----
-## markdown quick reference
-# headers
+## 心得
 
-*emphasis*
+> 這次除了學到本金攤還方式，也學了怎麼寫Markdown，同時做了個視覺化的流程圖，希望以後能把GitHub經營好~
 
-**strong**
-
-* list
-
->block quote
-
-    code (4 spaces indent)
-[links](https://wikipedia.org)
-
-----
-## changelog
-* 17-Feb-2013 re-design
-
-----
-## thanks
-* [markdown-js](https://github.com/evilstreak/markdown-js)
