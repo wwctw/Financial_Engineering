@@ -15,11 +15,16 @@ see [參考資料一](https://ttc.scu.org.tw/memdca1.htm)
 > 本金平均攤還法是將本金平均在貸款期間償還，每期償還的本金均相同，而每期所攤還的利息卻因累積未攤還之本金逐漸減少而減少，因此，每期所攤還的本利和會越來越少。
 
 ----
+## 程式流程圖 
+
+<img src="/HW1/flow.png" border="10" />
+
+
+
+----
 ## usage
 1. Write markdown text in this textarea.
 2. Click 'HTML Preview' button.
-
-<img src="/HW1/flow.png" border="10" />
 
 ----
 ## markdown quick reference
