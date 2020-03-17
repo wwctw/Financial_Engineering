@@ -16,7 +16,7 @@ see [參考資料](https://ttc.scu.org.tw/memdca1.htm)
 
 <img src="/HW1/flow.png" border="10" />
 
-## 細節
+## 計算細節
 
 總月份數 = 12 * 期數  
 平均每月攤還本金 = 本金 / 總月份數 (無條件進位)  
