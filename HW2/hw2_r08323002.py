@@ -102,3 +102,4 @@ for k in range(0,total_period+1):
     for m in range(k+1,total_period+1):
         print(" ",'%8.2f'%(forward_rate[m][k]*100),"% ",end="")
 print("\n")
+
