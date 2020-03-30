@@ -1,7 +1,12 @@
-# 測試
+# 財務工程  學習歷程  R08323002 
+#### 作業二: 計算市場債券報價中的 YTM、Spot Rate、Forward Rate
+
+## 先說程式執行方法
+
+這支程式是用Python 3寫成的，在支援Python的IDE或終端機直接執行HW2目錄下的py檔案，就可以依程式提示輸入每年計息次數和年數，以及債券票面利率和價格，程式會直接印出計算結果。
 
 ## 執行範例
-
+執行環境
 ```
 wwctw@gentoo ~/fe/ps2 $ python
 ```
@@ -11,6 +16,7 @@ Python 3.6.5 (default, Jul 16 2019, 13:36:36)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 ```
+執行結果
 ```
 wwctw@gentoo ~/fe/ps2 $ python hw2_r08323002.py 
 ```
