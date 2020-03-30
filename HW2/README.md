@@ -5,8 +5,7 @@
 
 這支程式是用Python 3寫成的，在支援Python的IDE或終端機直接執行HW2目錄下的py檔案，就可以依程式提示輸入每年計息次數和年數，以及債券票面利率和價格，程式會直接印出計算結果。
 
-## 甚麼是 YTM、Spot Rate、Forward Rate
-$   f(x)=w^Tx+b $
+## 甚麼是 YTM(殖利率)、Spot Rate(即期利率)、Forward Rate(遠期利率)
 see [參考資料1](https://wiki.mbalib.com/zh-tw/%E5%88%B0%E6%9C%9F%E6%94%B6%E7%9B%8A%E7%8E%87)  
 >  所謂到期收益，是指將債券持有到償還期所獲得的收益，包括到期的全部利息。到期收益率又稱最終收益率和殖利率，是投資購買國債的內部收益率，即可以使投資購買國債獲得的未來現金流量的現值等於債券當前市價的貼現率。  
 
@@ -15,6 +14,15 @@ see [參考資料2](https://wiki.mbalib.com/zh-tw/%E5%8D%B3%E6%9C%9F%E5%88%A9%E7
 
 see [參考資料3](https://wiki.mbalib.com/zh-tw/%E8%BF%9C%E6%9C%9F%E5%88%A9%E7%8E%87)  
 >  遠期利率則是指隱含在給定的即期利率之中，從未來的某一時點到另一時點的利率。
+
+## 計算YTM、Spot Rate、Forward Rate
+
+我們考慮總共付息n次，每年付息m次，票面利率c，票面金額F的債券，債券價格是p元。  
+可得出每次付息C=Fc/m, 在利率為r下，第i期利息的現值為 C / (1+r/m)^i  
+理論價 PV = F / (1+r/m)^n +  sum over i=1 to n  ( C / (1+r/m)^i )
+滿足PV為債券價格的利率r即為YTM
+
+
 ## 執行範例
 執行環境
 ```
