@@ -32,6 +32,10 @@ see [參考資料3](https://wiki.mbalib.com/zh-tw/%E8%BF%9C%E6%9C%9F%E5%88%A9%E7
 滿足兩者相等的的S(i,k)即為從第i期到第k期的遠期利率f(i,k)，此時 ( 1 + S(k)/m )^k = ( 1 + S(i)/m )^i ( 1 + f(i,k)/m )^(k-i)，  
 可得 f(i,k) = m * ( ( ( 1 + S(k)/m )^k / ( ( 1 + S(i)/m)^i ) )^( 1/(k-i) ) - 1 )
 
+## 程式流程圖 
+
+<img src="/HW2/flow.png" border="10" />
+
 ## 執行範例
 執行環境
 ```
