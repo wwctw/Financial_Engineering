@@ -1,6 +1,5 @@
-# 作業二: 計算市場債券報價中的 YTM、Spot Rate、Forward Rate
-#### 財務工程  學習歷程  R08323002 
-
+# Financial Engineering  學習歷程  R08323002 
+#### 作業二: 計算市場債券報價中的 YTM、Spot Rate、Forward Rate
 
 ## 先說程式執行方法
 
