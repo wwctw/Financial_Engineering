@@ -23,7 +23,7 @@ see [參考資料3](https://wiki.mbalib.com/zh-tw/%E8%BF%9C%E6%9C%9F%E5%88%A9%E7
 可得出每次付息C = Fc/m, 在利率為r下，第k期利息的現值為 C / ( 1 + r/m )^k  
 理論價 PV = F / ( 1 + r/m )^n +  sum over k=1 to n  ( C / ( 1 + r/m )^k )  
 滿足PV為債券價格的利率r即為殖利率YTM，此時 p = F / ( 1 + YTM/m )^n +  sum over k=1 to n  ( C / ( 1 + YTM/m )^k )  
-在程式碼中用二分法來得出YTM ( see [二分法](https://en.wikipedia.org/wiki/Bisection_method) )  
+在程式碼中用二分法得出YTM ( see [二分法](https://en.wikipedia.org/wiki/Bisection_method) )  
 #### Spot Rate 即期利率
 考慮到期時間i期，每年共有m期，票面金額F，票面利率0的零息債券，債券價格是p元。  
 理論價 PV = F / ( 1 + r/m )^n  
