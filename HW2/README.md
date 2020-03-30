@@ -48,7 +48,7 @@ see [參考資料6](https://www.trignosource.com/finance/Forward%20rate.html)
 see [參考資料7](http://greenhornfinancefootnote.blogspot.com/2010/06/how-to-compute-theoretical-spot-rates.html)  
 
 ## 執行範例
-執行環境
+執行版本
 ```
 wwctw@gentoo ~/fe/ps2 $ python
 ```
