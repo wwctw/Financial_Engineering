@@ -34,7 +34,7 @@ see [參考資料3](https://wiki.mbalib.com/zh-tw/%E8%BF%9C%E6%9C%9F%E5%88%A9%E7
 
 ## 程式流程圖 
 
-<img src="/HW2/flow.png" width = "300" height = "200" border="10" />
+<img src="/HW2/flow.png" width = "500" height = "700" border="10" />
 
 ## 執行範例
 執行環境
