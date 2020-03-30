@@ -1,9 +1,13 @@
 # Financial Engineering  學習歷程  R08323002 
-#### 作業二: 計算市場債券報價中的 YTM、Spot Rate、Forward Rate
+#### 作業二: 計算市場債券報價中的 YTM、Spot Rate、Forward Rate 以及建立 Forward Rate 對照表
 
 ## 先說程式執行方法
 
 這支程式是用Python 3寫成的，在支援Python的IDE或終端機直接執行HW2目錄下的py檔案，就可以依程式提示輸入每年計息次數和年數，以及債券票面利率和價格，程式會直接印出計算結果。
+
+## 甚麼是 YTM、Spot Rate、Forward Rate
+
+
 
 ## 執行範例
 執行環境
