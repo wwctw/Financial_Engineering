@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Mar 29 02:30:27 2020
 
-@author: user01
-"""
 # 債券殖利率計算函數ytm
 #   參數:  price: 現在價格  par: 票面價格  rate: 票面利率
 #          t_period: 總期數  payment: 每年計息次數
