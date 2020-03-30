@@ -23,15 +23,18 @@ see [參考資料3](https://wiki.mbalib.com/zh-tw/%E8%BF%9C%E6%9C%9F%E5%88%A9%E7
 可得出每次付息C = Fc/m, 在利率為r下，第k期利息的現值為 C / ( 1 + r/m )^k  
 理論價 PV = F / ( 1 + r/m )^n +  sum over k=1 to n  ( C / ( 1 + r/m )^k )  
 滿足PV為債券價格的利率r即為殖利率YTM，此時 p = F / ( 1 + YTM/m )^n +  sum over k=1 to n  ( C / ( 1 + YTM/m )^k )  
+在程式碼中用二分法來得出YTM  
+see [二分法](https://en.wikipedia.org/wiki/Bisection_method)
 #### Spot Rate 即期利率
 考慮到期時間i期，每年共有m期，票面金額F，票面利率0的零息債券，債券價格是p元。  
 理論價 PV = F / ( 1 + r/m )^n  
 滿足PV為債券價格的利率r即為即期利率Spot Rate S(i)，此時 p = F / ( 1 + S(i)/m )^n  
+可得 S(i) = m * ( (F/p)^(1/n) - 1 )  
 #### Forward Rate 遠期利率
 每年共有m期，考慮兩種投資1元的方法，直接買k期的債券，或是先買i期債券，再用得到的錢來買(k-i)期債券。  
 在第k期，前者可獲得(1+S(k)/m)^k元，後者可獲得( ( 1 + S(i)/m )^i )( ( 1 + S(i,k)/m )^(k-i)元，  
 其中S(i,k)為距離現在i期，(k-i)期的Spot rate，即零息債券的YTM。  
-滿足兩者相等的的S(i,k)即為從第i期到第k期的遠期利率f(i,k)，此時 ( 1 + S(k)/m )^k = ( 1 + S(i)/m )^i ( 1 + f(i,k)/m )^(k-i)，  
+滿足兩者相等的的S(i,k)即為從第i期到第k期的遠期利率f(i,k)，此時 ( 1 + S(k)/m )^k = ( 1 + S(i)/m )^i ( 1 + f(i,k)/m )^(k-i)  
 可得 f(i,k) = m * ( ( ( 1 + S(k)/m )^k / ( ( 1 + S(i)/m)^i ) )^( 1/(k-i) ) - 1 )
 
 ## 程式流程圖 
