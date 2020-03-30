@@ -3,7 +3,7 @@
 
 ## 先說程式執行方法
 
-這支程式是用Python 3寫成的，在支援Python的IDE或終端機直接執行HW2目錄下的py檔案，就可以依程式提示輸入每年計息次數和年數，以及債券票面利率和價格，程式會直接印出計算結果。
+這支程式是用Python 3寫成的，在支援Python的IDE或終端機直接執行HW2目錄下的hw2_r08323002.py檔案，就可以依程式提示輸入每年計息次數和年數，以及債券票面利率和價格，程式會直接印出計算結果。因為輸出的利率都是每年有1,2,4期的年利率(根據輸入的每年期數)，如果有需要轉換成其他期數利率的話，可以參考convert.py檔案。
 
 ## 甚麼是 YTM(殖利率)、Spot Rate(即期利率)、Forward Rate(遠期利率)
 see [參考資料1](https://wiki.mbalib.com/zh-tw/%E5%88%B0%E6%9C%9F%E6%94%B6%E7%9B%8A%E7%8E%87)  
@@ -35,6 +35,13 @@ see [參考資料3](https://wiki.mbalib.com/zh-tw/%E8%BF%9C%E6%9C%9F%E5%88%A9%E7
 ## 程式流程圖 
 
 <img src="/HW2/hw2_flow.png" width = "600" height = "600" border="10" />
+
+## 流程細節
+
+see [參考資料4](https://www.calkoo.com/en/ytm-calculator)  
+see [參考資料5](https://www.trignosource.com/finance/spot%20rate.html)  
+see [參考資料6](https://www.trignosource.com/finance/Forward%20rate.html)  
+see [參考資料7](http://greenhornfinancefootnote.blogspot.com/2010/06/how-to-compute-theoretical-spot-rates.html)  
 
 ## 執行範例
 執行環境
