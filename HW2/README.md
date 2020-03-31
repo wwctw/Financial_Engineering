@@ -48,7 +48,7 @@ see [參考資料6](https://www.trignosource.com/finance/Forward%20rate.html)
 see [參考資料7](http://greenhornfinancefootnote.blogspot.com/2010/06/how-to-compute-theoretical-spot-rates.html)  
 
 ## 執行範例
-###執行版本
+### 執行版本
 ```
 wwctw@gentoo ~/fe/ps2 $ python
 ```
@@ -58,7 +58,7 @@ Python 3.6.5 (default, Jul 16 2019, 13:36:36)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 ```
-###執行結果  
+### 執行結果  
 註1: 如果輸出文字超過欄位，可以將輸出訊息複製到文字編輯軟體上，以利觀察輸出結果  
 註2: 因為輸出的年利率都是年利率、半年利率、季利率等年化後的利率(根據輸入的每年期數)，如果有需要轉換成其他期數的利率，可以透過HW2目錄下的convert.py檔案來轉換。
 ```
