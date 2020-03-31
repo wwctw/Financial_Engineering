@@ -43,7 +43,7 @@ see [參考資料3](https://wiki.mbalib.com/zh-tw/%E8%BF%9C%E6%9C%9F%E5%88%A9%E7
 ## 流程細節
 計算殖利率的方法就如同上一節，要注意的地方是，投影片上的網站 (  see [參考資料4](https://www.calkoo.com/en/ytm-calculator) ) 如果使用半年計息或季計息，計算的時候是直接輸出半年利率或季利率，而非年化後的年利率(需乘以2或4)。  
   
-依序由到期日1期開始計算即期利率至最後一期，計算即期利率需要將債券非到期日的現金流現值從價格扣除，注意到第k期現金流C的現值是 C / ( 1 + S(k)/m )^k 而非 C / ( 1 + YTM/m )^k ，投影片上的網站 ( see [參考資料5](http://greenhornfinancefootnote.blogspot.com/2010/06/how-to-compute-theoretical-spot-rates.html) ) 直接使用1.5年債券殖利率求得現金流現值是有問題的，會使到期時間1.5年的即期利率少0.01%。  
+依序由到期日1期開始計算即期利率至最後一期，計算即期利率需要將債券非到期日的現金流現值從價格扣除，注意到第j期現金流C的現值是 C / ( 1 + S(j)/m )^j 而非 C / ( 1 + YTM/m )^j ，投影片上的網站 ( see [參考資料5](http://greenhornfinancefootnote.blogspot.com/2010/06/how-to-compute-theoretical-spot-rates.html) ) 直接使用1.5年債券殖利率求得現金流現值是有問題的，會使到期時間1.5年的即期利率少0.01%。  
   
 求得到期日k期的即期利率後就可以依上一節公式得出第i期到第k期的遠期利率f(i,k)， i 從 0 到 (k-1) 。要注意的地方是投影片上的網站 ( see [參考資料6](https://www.trignosource.com/finance/spot%20rate.html) [參考資料7](https://www.trignosource.com/finance/Forward%20rate.html) ) 是直接輸入單位債券特定時間的零息債券價格，而非1000元債券的價格。  
 另外，hw2_r08323002.py預設從第一期開始輸入到最後一期，如果要像上述網站得出特定時間的即期利率或遠期利率，除了有關的期數需要變動，只需要將其他不相關期數的票面利率輸入0，債券價格輸入1000，即可得出和投影片網站相同的結果 (註:不相關欄位的數值無意義) 。
