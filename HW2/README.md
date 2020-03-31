@@ -100,7 +100,6 @@ wwctw@gentoo ~/fe/ps2 $ python hw2_r08323002.py
      1.00 y                                               5.12 % 
      1.50 y                                                      
 
-
 ```
 
 ## 心得
