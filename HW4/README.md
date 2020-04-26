@@ -43,8 +43,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 ```
 ### 執行結果
-註1: 如果輸出文字超過欄位，可以將輸出訊息複製到文字編輯軟體上，以利觀察輸出結果  
-註2: 需載入math模組
+註: 需載入math模組
 
 #### 買權
 ```
