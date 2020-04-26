@@ -6,17 +6,15 @@ import math
 stock_price = float(input("   請輸入現在股票價格 :  "))
 sigma = float(input("   請輸入年度化波動 sigma :  "))
 T_div = int(input("   請輸入除息次數 :  "))
-
+r = float(input("   請輸入無風險年化連續複利利率(%) :  "))/100
+X = float(input("   請輸入履約價格 :  "))
+tau = float(input("   請輸入到期時間(月) :  "))/12
 div_time = [0];
 div_price = [0];
 for k in range(1,T_div+1):
     print("\n   第",'%d'%k,"次除息時間和金額的資訊\n",end="")
     div_time.append(float(input("     請輸入除息時間(月) :  "))/12)
     div_price.append(float(input("     請輸入除息金額 :  ")))
-
-r = float(input("   請輸入無風險年化連續複利利率(%) :  "))/100
-X = float(input("   請輸入履約價格 :  "))
-tau = float(input("   請輸入到期時間(月) :  "))/12
 
 # 計算除息後的現值
 exdiv_stock = stock_price
@@ -37,4 +35,4 @@ put_price = call_price - exdiv_stock + X*math.exp(-r*tau)
 print("\n\n   輸出結果 :  \n\n",end="")
 print("   除息後股票現值為",'%9.3f'%exdiv_stock,"\n",end="")
 print("   買權價值為",'%9.3f'%call_price,"\n",end="")
-print("   賣權價值為",'%9.3f'%put_price,"\n",end="")
+print("   賣權價值為",'%9.3f'%put_price,"\n\n",end="")
