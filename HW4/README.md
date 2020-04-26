@@ -1,6 +1,6 @@
 # Financial Engineering  學習歷程  R08323002
 
-#### 作業四: 有股息的 Black-Scholes 選擇權定價模型
+#### 作業四: 含股息的 Black-Scholes 選擇權定價模型
 
 ## 先說程式執行方法
 
