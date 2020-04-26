@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 26 18:37:10 2020
-"""
 
 import math
 
