@@ -45,7 +45,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 ### 執行結果
 註: 需載入math模組
 
-#### 買權
 ```
 wwctw@gentoo ~/fe/ps4 $ python hw4_r08323002.py 
 ```
