@@ -5,10 +5,11 @@ import math
 # 輸入股票與選擇權資訊
 stock_price = float(input("   請輸入現在股票價格 :  "))
 sigma = float(input("   請輸入年度化波動 sigma :  "))
-T_div = int(input("   請輸入除息次數 :  "))
 r = float(input("   請輸入無風險年化連續複利利率(%) :  "))/100
 X = float(input("   請輸入履約價格 :  "))
 tau = float(input("   請輸入到期時間(月) :  "))/12
+
+T_div = int(input("   請輸入除息次數 :  "))
 div_time = [0];
 div_price = [0];
 for k in range(1,T_div+1):
