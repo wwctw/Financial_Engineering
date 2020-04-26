@@ -34,7 +34,7 @@ see [參考資料1](https://wiki.mbalib.com/zh-tw/%E6%9C%9F%E6%9D%83)
 
 ### 執行版本
 ```
-wwctw@gentoo ~/fe/ps3 $ python
+wwctw@gentoo ~/fe/ps4 $ python
 ```
 ```
 Python 3.6.5 (default, Jul 16 2019, 13:36:36) 
@@ -48,10 +48,30 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 #### 買權
 ```
-wwctw@gentoo ~/fe/ps3 $ python hw3_r08323002.py 
+wwctw@gentoo ~/fe/ps4 $ python hw4_r08323002.py 
 ```
 ```
-   請輸入計算買權價格或賣權價格  買權請輸入 1  賣權請輸入 2 :  1
+   請輸入現在股票價格 :  75
+   請輸入年度化波動 sigma :  0.35
+   請輸入無風險年化連續複利利率(%) :  6
+   請輸入履約價格 :  65
+   請輸入到期時間(月) :  6
+   請輸入除息次數 :  2
+
+   第 1 次除息時間和金額的資訊
+     請輸入除息時間(月) :  1
+     請輸入除息金額 :  1
+
+   第 2 次除息時間和金額的資訊
+     請輸入除息時間(月) :  4
+     請輸入除息金額 :  1
+
+
+   輸出結果 :  
+
+   除息後股票現值為    73.025 
+   買權價值為    12.806 
+   賣權價值為     2.860 
 
 ```
 
