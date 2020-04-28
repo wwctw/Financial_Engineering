@@ -24,14 +24,14 @@ see [參考資料2](https://wiki.mbalib.com/zh-tw/Black-Scholes%E6%9C%9F%E6%9D%8
 #### 計算扣掉股息現值的股票價格
 如果發放股息是市場上公開的資訊，原本的股票價格須扣所有股息的現值。S^hat = S - sum_i ( 第i次股息的無風險利率現值 )  
 #### 以 Black-Scholes 公式計算買權價格
-call_price = S^hat * N(d1) - X * exp(-r*tau) * N(d2)  
-d1 = ( ln(S^hat/X) + ( r + sigma^2/2 )*tau )/( sigma*sqrt(tau) )  
-d2 = d1 - sigma*sqrt(tau)  
+call_price = S^hat * N(d1) - X * exp( -r * tau) * N(d2)  
+d1 = ( ln(S^hat/X) + ( r + sigma^2/2 ) * tau )/( sigma * sqrt(tau) )  
+d2 = d1 - sigma * sqrt(tau)  
 
 其中S^hat為除息後股票現值，X為履約價格，r為無風險年化連續利率，tau為時間(年)，sigma為股票流動性，N(d) 為標準常態分布的累積分布函數。  
 
 #### 以 put-call parity 計算賣權價格
-由買賣權平價關係 put_price = call_price - S^hat + X * exp(-r*tau) ，計算賣權價格。  
+由買賣權平價關係 put_price = call_price - S^hat + X * exp( -r * tau) ，計算賣權價格。  
 
 ## 執行範例
 
