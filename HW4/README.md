@@ -22,7 +22,7 @@ see [參考資料2](https://wiki.mbalib.com/zh-tw/Black-Scholes%E6%9C%9F%E6%9D%8
 ## 具體計算流程細節
 
 #### 計算扣掉股息現值的股票價格
-如果發放股息是市場上公開的資訊，原本的股票價格須扣所有股息的現值。S^hat = S - sum_i ( 第i次股息的無風險利率現值 )  
+如果發放股息是市場上公開的資訊，原本的股票價格須扣所有股息的現值，S^hat = S - sum_i ( 第i次股息的無風險利率現值 )  
 #### 以 Black-Scholes 公式計算買權價格
 call_price = S^hat * N(d1) - X * exp( -r * tau) * N(d2)  
 d1 = ( ln(S^hat/X) + ( r + sigma^2/2 ) * tau )/( sigma * sqrt(tau) )  
