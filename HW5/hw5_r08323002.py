@@ -8,11 +8,12 @@ import QuantLib as ql
 S0 = float(input("   請輸入現在股票價格 :  "))
 length = float(input("   請輸入到期時間(年) :  "))
 strike = float(input("   請輸入履約價格 :  "))
+sigma_stock = float(input("   請輸入股票年度化波動 sigma :  "))
 risk_free = float(input("   請輸入年化無風險利率(%) :  "))/100
 num_paths = int(input("   請輸入蒙地卡羅次數 :  "))
 timestep = int(input("   這期間總共要分幾步模擬 :  "))
-sigma = float(input("   請輸入 Hull-White Model 中年度化波動 sigma 的值 :  "))
-a = float(input("   請輸入 Hull-White Model 中 a 的值 :  "))
+sigma = float(input("   請輸入Hull-White Model 的 sigma 值 :  "))
+a = float(input("   請輸入 Hull-White Model 的 a 值 :  "))
 forward_rate = float(input("   請輸入現在的年化利率(%) :  "))/100
 
 
@@ -59,12 +60,12 @@ plt.show()
 
 np.random.seed(200)
 
-def genBrownPath (T, mu_path, sigma, S0, dt):
+def genBrownPath (T, mu_path, sigma_stock, S0, dt):
     n = len(mu_path)
     W = [0] + np.random.standard_normal(size = n)
     W = np.cumsum(W)*np.sqrt(dt) # == standard brownian motion
-    X = (mu_path - 0.5*sigma**2)*dt
-    X = np.cumsum(X) + sigma*W
+    X = (mu_path - 0.5*sigma_stock**2)*dt
+    X = np.cumsum(X) + sigma_stock*W
     S = S0*np.exp(X) # == geometric brownian motion
     plt.plot(np.linspace(0, T, n), S)
     return S
@@ -74,7 +75,8 @@ call = []
 put = []
 
 for i in range(0,num_paths):
-    stock_paths.append(genBrownPath(length,paths[i],sigma,S0,length/timestep))
+    stock_paths.append(genBrownPath(length, paths[i], \
+                                    sigma_stock, S0, length/timestep ) )
     call.append( max(stock_paths[i][-1]-strike,0) )
     put.append( max(strike-stock_paths[i][-1],0) )
 
