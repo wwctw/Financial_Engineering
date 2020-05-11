@@ -55,11 +55,15 @@ d2 = d1 - sigma * sqrt(tau)
    請輸入 Hull-White Model 的 a 值 :  .1
 
    請輸入現在的年化利率(%) :  3
+ 
+```
+
+<img src="/HW5/hw5_ex01.png" width = "383" height = "264" border="10" />
    
-   <img src="/HW5/hw5_ex01.png" width = "383" height = "264" border="10" />
-   
-   <img src="/HW5/hw5_ex02.png" width = "378" height = "264" border="10" />
-   
+<img src="/HW5/hw5_ex02.png" width = "378" height = "264" border="10" />
+
+```
+
    買權價格為     2.126 
 
    賣權價值為     9.234 
