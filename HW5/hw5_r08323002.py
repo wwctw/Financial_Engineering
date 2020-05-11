@@ -11,7 +11,7 @@ strike = float(input("   請輸入履約價格 :  "))
 risk_free = float(input("   請輸入年化無風險利率(%) :  "))/100
 num_paths = int(input("   請輸入蒙地卡羅次數 :  "))
 timestep = int(input("   這期間總共要分幾步模擬 :  "))
-sigma = float(input("   請輸入Hull-White Model 中年度化波動 sigma 的值 :  "))
+sigma = float(input("   請輸入 Hull-White Model 中年度化波動 sigma 的值 :  "))
 a = float(input("   請輸入 Hull-White Model 中 a 的值 :  "))
 forward_rate = float(input("   請輸入現在的年化利率(%) :  "))/100
 
