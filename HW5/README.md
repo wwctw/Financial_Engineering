@@ -29,8 +29,10 @@ see [參考資料3](https://en.wikipedia.org/wiki/Geometric_Brownian_motion)
 程式依據使用者輸入的次數產生數條路徑，產生方式可參考此網站 ( see [參考資料4](http://gouthamanbalaraman.com/blog/hull-white-simulation-quantlib-python.html) )  
 程式中可以選擇排除負利率與否，如果選擇排除，當發生負利率時，程式會重新產生一條新的路徑。
 
-#### 計算扣掉股息現值的股票價格
+#### 以幾何布朗運動產生未來股票價格
 如果發放股息是市場上公開的資訊，原本的股票價格須扣所有股息的現值，S^hat = S - sum_i ( 第i次股息的無風險利率現值 )  
+
+( see [參考資料5](https://colab.research.google.com/drive/1LL_m1UO_U2oHDMQhBDPjhUBANDpVhev7) )
 #### 以 Black-Scholes 公式計算買權價格
 call_price = S^hat * N(d1) - X * exp( -r * tau) * N(d2)  
 d1 = ( ln(S^hat/X) + ( r + sigma^2/2 ) * tau )/( sigma * sqrt(tau) )  
