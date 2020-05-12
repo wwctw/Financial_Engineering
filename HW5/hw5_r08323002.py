@@ -49,8 +49,10 @@ def generate_paths(num_paths, timestep):
             path = sample_path.value()
             time = [path.time(j) for j in range(len(path))]
             value = [path[j] for j in range(len(path))]
+            # 若允許負利率，則不須判斷是否發生負利率
             if negative == 1:
                 break
+            # 若不允許負利率，發生負利率時須重新產生路徑
             for k in range(0,len(value)):
                 if value[k]<0:
                     break
@@ -60,6 +62,7 @@ def generate_paths(num_paths, timestep):
     return np.array(time), arr
 
 time, paths = generate_paths(num_paths, timestep)
+# 將利率路徑畫出來
 for i in range(num_paths):
     plt.plot(time, paths[i, :], lw=0.8, alpha=0.6)
 plt.title("Hull-White Short Rate Simulation")
@@ -88,13 +91,14 @@ put = []
 for i in range(0,num_paths):
     stock_paths.append(genBrownPath(length, paths[i], \
                                     sigma_stock, S0, length/timestep ) )
+    # 根據不同的折現方式折現
     if pv_method == 2:
-        dfactor = np.exp(risk_free*length)
+        dfactor = np.exp(risk_free*length) # 根據輸入的無風險利率折現
     else:
         dfactor = 0
         for j in range(0,len(paths[i])):
             dfactor = dfactor + paths[i][j]
-        dfactor = np.exp(dfactor*length/timestep)
+        dfactor = np.exp(dfactor*length/timestep) # 根據路徑產生的利率折現
     call.append( max(stock_paths[i][-1]-strike,0) / dfactor )
     put.append( max(strike-stock_paths[i][-1],0) / dfactor )
 
