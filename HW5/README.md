@@ -24,6 +24,11 @@ see [參考資料3](https://en.wikipedia.org/wiki/Geometric_Brownian_motion)
 <img src="/HW5/hw5_flow.png" width = "336" height = "528" border="10" />
 
 ## 具體計算流程細節
+#### 以 Hull-White 模型產生利率
+此模型假設利率符合隨機微分方程 dr = (\theta - a r) dt + \sigma dW ，其中 a 和 sigma 為常數， \theta 為時間t的函數。  
+程式依據使用者輸入的次數產生數條路徑，產生方式可參考以下網站  
+see [參考資料4](http://gouthamanbalaraman.com/blog/hull-white-simulation-quantlib-python.html)  
+程式中可以排除負利率與否，如果選擇排除，當發生負利率時，程式會重新產生一條新的路徑。
 
 #### 計算扣掉股息現值的股票價格
 如果發放股息是市場上公開的資訊，原本的股票價格須扣所有股息的現值，S^hat = S - sum_i ( 第i次股息的無風險利率現值 )  
