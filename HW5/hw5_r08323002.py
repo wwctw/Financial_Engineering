@@ -53,10 +53,12 @@ def generate_paths(num_paths, timestep):
             if negative == 1:
                 break
             # 若不允許負利率，發生負利率時須重新產生路徑
+            flag = 0
             for k in range(0,len(value)):
                 if value[k]<0:
+                    flag = 1
                     break
-            if k == (len(value)-1):
+            if flag == 0:
                 break
         arr[i, :] = np.array(value)
     return np.array(time), arr
