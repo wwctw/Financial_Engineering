@@ -30,9 +30,9 @@ see [參考資料3](https://en.wikipedia.org/wiki/Geometric_Brownian_motion)
 程式中可以選擇排除負利率與否，如果選擇排除，當發生負利率時，程式會重新產生一條新的路徑。
 
 #### 以幾何布朗運動產生未來股票價格
-如果發放股息是市場上公開的資訊，原本的股票價格須扣所有股息的現值，S^hat = S - sum_i ( 第i次股息的無風險利率現值 )  
-( see [參考資料5](https://ch-hsieh.blogspot.com/2012/04/how-to-solve-sde-practically-4.html) )
-( see [參考資料6](https://colab.research.google.com/drive/1LL_m1UO_U2oHDMQhBDPjhUBANDpVhev7) )
+此模型假設股價符合隨機微分方程 dS_t = \mu S_t dt + \sigma S_t dB_t ， 其中 S_t 為時刻t的股價， \mu 為股價每年收益率期望值， \sigma 為股價每年波動度， B_t 為標準布朗運動。 ( see [參考資料5](https://ch-hsieh.blogspot.com/2012/04/how-to-solve-sde-practically-4.html) )  
+程式中即先產生標準布朗運動後再產生幾何布朗運動( see [參考資料6](https://colab.research.google.com/drive/1LL_m1UO_U2oHDMQhBDPjhUBANDpVhev7) )，注意到在本次作業中 mu 需隨利率改變而變化，而不是像參考資料6直接將mu當成常數。
+
 #### 以 Black-Scholes 公式計算買權價格
 call_price = S^hat * N(d1) - X * exp( -r * tau) * N(d2)  
 d1 = ( ln(S^hat/X) + ( r + sigma^2/2 ) * tau )/( sigma * sqrt(tau) )  
