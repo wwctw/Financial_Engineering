@@ -13,9 +13,7 @@ see [參考資料1](https://wiki.mbalib.com/zh-tw/%E6%9C%9F%E6%9D%83)
 
 ## 甚麼是 Hull WHite 利率模型
 see [參考資料2](https://en.wikipedia.org/wiki/Hull%E2%80%93White_model)
->In financial mathematics, the Hull–White model is a model of future interest rates. In its most generic formulation, it belongs to the class of no-arbitrage models that are able to fit today's term structure of interest rates. It is relatively straightforward to translate the mathematical description of the evolution of future interest rates onto a tree or lattice and so interest rate derivatives such as bermudan swaptions can be valued in the model.
-
-The first Hull–White model was described by John C. Hull and Alan White in 1990. The model is still popular in the market today.
+>In financial mathematics, the Hull–White model is a model of future interest rates. In its most generic formulation, it belongs to the class of no-arbitrage models that are able to fit today's term structure of interest rates. It is relatively straightforward to translate the mathematical description of the evolution of future interest rates onto a tree or lattice and so interest rate derivatives such as bermudan swaptions can be valued in the model. The first Hull–White model was described by John C. Hull and Alan White in 1990. The model is still popular in the market today.
 
 ## 程式流程圖
 
