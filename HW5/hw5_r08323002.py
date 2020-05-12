@@ -77,11 +77,11 @@ np.random.seed(200)
 def genBrownPath (T, mu_path, sigma_stock, S0, dt):
     n = len(mu_path)
     W = [0] + np.random.standard_normal(size = n)
-    W = np.cumsum(W)*np.sqrt(dt)
-    X = (mu_path - 0.5*sigma_stock**2)*dt
+    W = np.cumsum(W)*np.sqrt(dt) # 產生標準布朗運動
+    X = (mu_path - 0.5*sigma_stock**2)*dt # 注意到 mu 會隨時間改變
     X = np.cumsum(X) + sigma_stock*W
-    S = S0*np.exp(X)
-    plt.plot(np.linspace(0, T, n), S)
+    S = S0*np.exp(X) # 產生股票價格
+    plt.plot(np.linspace(0, T, n), S) # 將股價畫出來
     return S
 
 stock_paths = []
@@ -105,6 +105,7 @@ for i in range(0,num_paths):
 plt.title("Stock price simulation")
 plt.show()
 
+# 由期望現值得出選擇權的價格
 call_price = np.mean(call)
 put_price = np.mean(put)
 
