@@ -31,7 +31,7 @@ see [參考資料3](https://en.wikipedia.org/wiki/Geometric_Brownian_motion)
 
 #### 以幾何布朗運動產生未來股票價格
 此模型假設股價符合隨機微分方程 dS_t = \mu S_t dt + \sigma S_t dB_t ， 其中 S_t 為時刻t的股價， \mu 為股價每年收益率期望值， \sigma 為股價每年波動度， B_t 為標準布朗運動。 ( see [參考資料5](https://ch-hsieh.blogspot.com/2012/04/how-to-solve-sde-practically-4.html) )  
-程式中即先產生標準布朗運動後再產生幾何布朗運動( see [參考資料6](https://colab.research.google.com/drive/1LL_m1UO_U2oHDMQhBDPjhUBANDpVhev7) )，注意到在本次作業中 mu 需隨利率改變而變化，而不是像參考資料6直接將mu當成常數。
+程式中即先產生標準布朗運動後再產生幾何布朗運動 ( see [參考資料6](https://colab.research.google.com/drive/1LL_m1UO_U2oHDMQhBDPjhUBANDpVhev7) ) ，注意到在本次作業中 mu 需隨利率改變而變化，而不是像參考資料6直接將mu當成常數。
 
 #### 計算到期時選擇權價值及期望現值
 分別計算每一條路徑在給定履約價格下買權和賣權的到期價值。折現方式有兩種，第一種是直接用每一條路徑產生的利率做折現，第二種是使用輸入的無風險利率折現。雖然理論上模型的期望利率應該要能反映市場上無風險的利率，但程式中保留兩種不同的折現方式。  
