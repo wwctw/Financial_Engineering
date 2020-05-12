@@ -11,9 +11,11 @@
 see [參考資料1](https://wiki.mbalib.com/zh-tw/%E6%9C%9F%E6%9D%83)  
 >選擇權是一種能在未來某特定時間以特定價格買入或賣出一定數量的某種特定商品的權利。它是在期貨的基礎上產生的一種金融工具，給予買方（或持有者）購買或出售標的資產的權利。選擇權的持有者可以在該項選擇權規定的時間內選擇買或不買、賣或不賣的權利，他可以實施該權利，也可以放棄該權利，而選擇權的出賣者則只負有選擇權合約規定的義務。  
 
-## 甚麼是 Black-Scholes 定價模型
-see [參考資料2](https://wiki.mbalib.com/zh-tw/Black-Scholes%E6%9C%9F%E6%9D%83%E5%AE%9A%E4%BB%B7%E6%A8%A1%E5%9E%8B)
->斯克爾斯(Myron Scholes)與他的同事、已故數學家費雪·布萊克(Fischer Black)在70年代初合作研究出了一個選擇權定價的複雜公式。與此同時，默頓(Robert Merton)也發現了同樣的公式及許多其它有關選擇權的有用結論。結果，兩篇論文幾乎同時在不同刊物上發表。所以，布萊克—斯克爾斯定價模型亦可稱為布萊克—斯克爾斯—默頓定價模型。默頓擴展了原模型的內涵，使之同樣運用於許多其它形式的金融交易。他們創立和發展的布萊克——斯克爾斯選擇權定價模型(Black Scholes Option Pricing Model)為包括股票、債券、貨幣、商品在內的新興衍生金融市場的各種以市價價格變動定價的衍生金融工具的合理定價奠定了基礎。
+## 甚麼是 Hull WHite 利率模型
+see [參考資料2](https://en.wikipedia.org/wiki/Hull%E2%80%93White_model)
+>In financial mathematics, the Hull–White model is a model of future interest rates. In its most generic formulation, it belongs to the class of no-arbitrage models that are able to fit today's term structure of interest rates. It is relatively straightforward to translate the mathematical description of the evolution of future interest rates onto a tree or lattice and so interest rate derivatives such as bermudan swaptions can be valued in the model.
+
+The first Hull–White model was described by John C. Hull and Alan White in 1990. The model is still popular in the market today.
 
 ## 程式流程圖
 
