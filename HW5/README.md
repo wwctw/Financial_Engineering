@@ -1,6 +1,6 @@
 # Financial Engineering  學習歷程  R08323002
 
-#### 作業五: 含股息的 Black-Scholes 選擇權定價模型
+#### 作業五: 基於Hull-White利率模型的選擇權定價模型
 
 ## 先說程式執行方法
 
